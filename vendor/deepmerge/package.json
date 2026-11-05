@@ -1,0 +1,9 @@
+{
+  "name": "@anewday/deepmerge",
+  "version": "4.3.1-patch.1",
+  "private": true,
+  "description": "Local deepmerge 4.3.1 fork rejecting __proto__ keys; see SECURITY.md",
+  "main": "index.cjs",
+  "types": "index.d.ts",
+  "license": "MIT"
+}
