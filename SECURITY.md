@@ -11,7 +11,7 @@
 
 `npm run audit:dependencies` requires zero findings in both production and development dependencies. Security updates must also pass the normal CI build, lint, type, unit, browser and Lighthouse checks.
 
-The November 2026 remediation updates Vite, Vitest, Lighthouse and vulnerable transitive packages. The `minimatch@>=7 <11` and `glob@>=9 <14.0.2` overrides use patched major versions because their consumers still request vulnerable versions. Older minimatch callers retain their original API. Recheck and remove these overrides when the consuming packages adopt patched versions themselves.
+The November 2026 remediation updates Vite, Vitest, Lighthouse and vulnerable transitive packages. The `minimatch@>=7 <11` override and the `glob` override scoped to `workbox-build` use patched major versions because these consumers still request vulnerable versions. Older minimatch callers retain their original API. Recheck and remove these overrides when the consuming packages adopt patched versions themselves.
 
 ### Temporary deepmerge patch
 
